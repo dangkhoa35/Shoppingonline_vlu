@@ -1,0 +1,226 @@
+/* styles.css */
+.body-customer {
+    width: 1150px;
+    height: fit-content;
+    margin: 0px auto;
+}
+.body-admin {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px auto;
+}
+div.inline {
+    display: inline-block;
+}
+figure.caption-right {
+    display: flex;
+    align-items: center;
+}
+.align-center {
+    width: fit-content;
+    margin: 0px auto;
+}
+.align-valign-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0px 20px 20px 20px;
+    border: 1px solid black;
+}
+.text-center {
+    text-align: center;
+}
+
+span.link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+/* menu.CSS */
+div.border-bottom {
+    border-bottom: 1px solid black;
+    padding: 10px 0px 10px 0px;
+}
+div.float-left {
+    float: left;
+}
+div.float-right {
+    float: right;
+}
+
+div.float-clear {
+    clear: both;
+}
+
+ul.menu {
+    margin: 0px;
+    padding: 0px;
+}
+li.menu {
+    display: inline;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+form.search {
+  margin: 0px;
+}
+
+input.keyword {
+  width: 110px;
+}
+
+/* datatable.css */
+.datatable {
+  text-align: center;
+border-collapse: collapse;
+}
+
+/* header */
+tr:first-child.datatable {
+  background-color: #ffcc00;
+}
+
+/* even rows, except header */
+tr:not(:first-child):nth-child(even) datatable {
+  background-color: #f5f5f5;
+}
+
+/* odd rows, except header */
+tr:not(:first-child):nth-child(odd).datatable {
+  background-color: #ffeeaa;
+}
+
+/* except header */
+tr:not(:first-child) hover.datatable {
+background-color: #dcfcfc;
+cursor: pointer;
+}
+
+/* Tổng thể trang web */
+.body-customer {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Các tiện ích căn chỉnh */
+.border-bottom {
+  border-bottom: 2px solid #f0f0f0;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.float-left { float: left; }
+.float-right { float: right; }
+.float-clear { clear: both; }
+
+.text-center { text-align: center; }
+.align-center { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 30px; 
+  margin-top: 20px; 
+}
+/* Menu điều hướng */
+ul.menu { list-style-type: none; padding: 0; margin: 0; }
+li.menu { display: inline-block; margin-right: 25px; }
+li.menu a { 
+  text-decoration: none; 
+  color: #007bff; 
+  font-weight: 600; 
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+li.menu a:hover { color: #0056b3; }
+
+/* Ô tìm kiếm */
+.search .keyword {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+.search input[type="submit"] {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+.search input[type="submit"]:hover { background-color: #0069d9; }
+/* Thẻ bao quanh sản phẩm */
+.inline {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+}
+.inline:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Hình ảnh sản phẩm */
+.inline img {
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Tên và giá sản phẩm */
+figcaption {
+  margin-top: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+figcaption b { color: #d9534f; } /* Màu đỏ cho giá tiền */
+/* Layout trang chi tiết */
+.caption-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+.caption-right img {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Bảng thông tin */
+.caption-right table {
+  border-collapse: collapse;
+  font-size: 1.1em;
+}
+.caption-right td {
+  padding: 10px;
+}
+
+/* Nút Add to Cart */
+input[type="submit"][value="ADD TO CART"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+input[type="submit"][value="ADD TO CART"]:hover { background-color: #218838; }
+
+input[type="number"] {
+  padding: 5px;
+  width: 50px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
